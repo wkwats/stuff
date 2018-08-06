@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2018-08-03
+  details: MyString
+  invoice_num: MyString
+  amount: 9.99
+  subco_po: one
+  milestone: 1
+  status: 1
+  pv_number: 1
+  approval: 1
+
+two:
+  date: 2018-08-03
+  details: MyString
+  invoice_num: MyString
+  amount: 9.99
+  subco_po: two
+  milestone: 1
+  status: 1
+  pv_number: 1
+  approval: 1

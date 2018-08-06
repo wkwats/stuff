@@ -1,0 +1,63 @@
+
+<%= simple_form_for :subco_po do |f| %>
+
+ 
+ 
+
+              <div class="row">
+                <div class="form-label-group col-md-4 mb-3">
+               
+                 <%= f.input :date, as: :date, html5: true %>
+
+                  
+                  <div class="invalid-feedback">
+                    Valid Task name is required.
+                  </div>
+                </div>
+                <div class="form-label-group col-md-4 mb-3">
+                  
+                  <%= f.input :details, class: "form-control", value: "required"  %>
+                  
+                  <div class="invalid-feedback">
+                    Valid Start Date is required.
+                  </div>
+                </div>
+
+                  <div class="form-label-group col-md-4 mb-3">
+                    
+                    <%= f.input :number, class: "form-control", value: "required" %>
+                    
+                    <div class="invalid-feedback">
+                      Valid Duration is required.
+                    </div>
+                </div>
+
+                  <div class="form-label-group col-md-4 mb-3">
+                    
+                     <%= f.input :amount %>
+                    
+                    <div class="invalid-feedback">
+                      Valid Duration is required.
+                    </div>
+                </div>
+                
+                  <div class="form-label-group col-md-4 mb-3">
+                    
+                   
+                    
+                    <div class="invalid-feedback">
+                      Valid Duration is required.
+                    </div>
+                </div>
+              </div>
+
+              <%= f.button :submit, class: "btn btn-primary btn-lg btn-block"  %>
+              
+    
+
+  
+<% end %>
+
+
+
+

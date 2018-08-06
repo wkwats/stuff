@@ -1,0 +1,21 @@
+
+<%= simple_form_for(@subco_invoice) do |f| %>
+  <%= f.error_notification %>
+  <%= f.error_notification message: f.object.errors[:base].to_sentence if f.object.errors[:base].present? %>
+
+  <div class="form-inputs">
+    <%= f.input :date %>
+    <%= f.input :details %>
+    <%= f.input :invoice_num %>
+    <%= f.input :amount %>
+    <%= f.association :subco_po %>
+    <%= f.input :milestone %>
+    <%= f.input :status %>
+    <%= f.input :pv_number %>
+    <%= f.input :approval %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

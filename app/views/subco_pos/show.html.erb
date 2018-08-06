@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @subco_po.date %>
+</p>
+
+<p>
+  <strong>Details:</strong>
+  <%= @subco_po.details %>
+</p>
+
+<p>
+  <strong>Number:</strong>
+  <%= @subco_po.number %>
+</p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @subco_po.amount %>
+</p>
+
+<p>
+  <strong>Sd:</strong>
+  <%= @subco_po.sd %>
+</p>
+
+<%= link_to 'Edit', edit_subco_po_path(@subco_po) %> |
+<%= link_to 'Back', subco_pos_path %>

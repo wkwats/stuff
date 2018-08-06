@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @subco_invoice.date %>
+</p>
+
+<p>
+  <strong>Details:</strong>
+  <%= @subco_invoice.details %>
+</p>
+
+<p>
+  <strong>Invoice num:</strong>
+  <%= @subco_invoice.invoice_num %>
+</p>
+
+<p>
+  <strong>Amount:</strong>
+  <%= @subco_invoice.amount %>
+</p>
+
+<p>
+  <strong>Subco po:</strong>
+  <%= @subco_invoice.subco_po %>
+</p>
+
+<p>
+  <strong>Milestone:</strong>
+  <%= @subco_invoice.milestone %>
+</p>
+
+<p>
+  <strong>Status:</strong>
+  <%= @subco_invoice.status %>
+</p>
+
+<p>
+  <strong>Pv number:</strong>
+  <%= @subco_invoice.pv_number %>
+</p>
+
+<p>
+  <strong>Approval:</strong>
+  <%= @subco_invoice.approval %>
+</p>
+
+<%= link_to 'Edit', edit_subco_invoice_path(@subco_invoice) %> |
+<%= link_to 'Back', subco_invoices_path %>

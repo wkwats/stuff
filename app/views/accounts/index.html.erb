@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Accounts</h1>
+
+
+<div class="row">
+
+  <% @accounts.each do |account| %>
+
+    <div class="col-sm-4">
+      
+
+      <div class="card border-success mb3 m-1">
+        <div class="card-header"><h6><%= account.name %></h6></div>
+
+          <div class="card-body">
+
+            <p><%= account.details %></p>
+
+            <div class="btn-group">
+              
+
+
+            <%= link_to 'Show', account, class: "btn btn-outline-success btn-sm" %>
+            <%= link_to 'Edit', edit_account_path(account), class: "btn btn-outline-warning btn-sm"  %>
+            <%= link_to 'Destroy', account, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-outline-danger btn-sm"  %>
+          
+
+
+            </div>
+
+            
+
+          </div>
+
+        </div>
+    
+
+      </div>  
+  <% end %>
+</div>
+
+<br>
+
+<%= link_to 'New Account', new_account_path %>
